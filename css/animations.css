@@ -1,0 +1,222 @@
+/*
+* Animation Styles
+* Author: John Doe
+*/
+
+/* Typed.js cursor */
+.typed-cursor {
+    color: var(--primary);
+    font-weight: var(--font-weight-bold);
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Scroll reveal animations (AOS fallback) */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade-right {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .fade-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .fade-left {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .fade-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .zoom-in.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Button hover animation */
+  .btn {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+  }
+  
+  .btn:hover::after {
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Card hover animations */
+  .portfolio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Navbar animations */
+  .navbar {
+    transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar.navbar-shrink {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: var(--shadow-md);
+  }
+  
+  /* Social icon animation */
+  .social-icon {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Hero text animation */
+  .hero-title .highlight {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hero-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 102, 204, 0.15);
+    z-index: -1;
+    transform: skewX(-15deg);
+  }
+  
+  /* Skill bar animation */
+  @keyframes skillFill {
+    from { width: 0; }
+    to { width: var(--skill-percent); }
+  }
+  
+  /* Back to top animation */
+  .back-to-top {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Timeline animations */
+  .timeline-item::before {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .timeline-item:hover::before {
+    transform: translateX(-50%) scale(1.2);
+    background-color: var(--primary-light);
+  }
+  
+  /* Portfolio filter animation */
+  .portfolio-filter::after {
+    transition: width 0.3s ease;
+  }
+  
+  /* Form input animation */
+  .form-control {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .form-control:focus {
+    transform: translateY(-2px);
+  }
+  
+  /* Theme toggle animation */
+  .theme-toggle .btn {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .theme-toggle .btn:hover {
+    transform: rotate(180deg);
+  }
+  
+  /* Image hover effect */
+  .about-image img, .hero-image img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .about-image:hover img, .hero-image:hover img {
+    transform: scale(1.02) rotate(1deg);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  /* Contact icons animation */
+  .contact-icon {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .contact-item:hover .contact-icon {
+    transform: scale(1.1) rotate(10deg);
+    background-color: rgba(0, 102, 204, 0.2);
+  }

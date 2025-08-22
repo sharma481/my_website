@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Personal Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn" class="btn" aria-label="Toggle theme">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Manish sharma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-md-6">
+          <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="hero-title">Hello, I'm Manish sharma.</h1>
+            <h2 class="hero-subtitle"><span class="typed" data-typed-items="Web Developer, UX Designer, software developer, Freelancer"></span></h2>
+            <p class="hero-description">"As a Junior Software Developer.</p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary me-3">Get In Touch</a>
+              <a href="#portfolio" class="btn btn-outline">View My Work</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-none d-md-block">
+          <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+            <img src="image/manish.jpg" alt="manish sharma" class="img-fluid rounded-circle">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shape">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="about-image">
+            <img src="image/manish.jpg" alt="About manish sharma" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+          <div class="about-content">
+            <h3>I'm a passionate web developer and software developer </h3>
+            <p> I specialize in creating beautiful, functional websites and digital experiences that help businesses grow. My approach combines clean code with stunning design to deliver results that exceed expectations.</p>
+            <p>When I'm not coding, you can find me exploring photography, hiking in nature, or experimenting with new technologies. I believe in continuous learning and staying up-to-date with the latest trends in web development.</p>
+            <div class="row about-info">
+              <div class="col-md-6">
+                <ul class="about-list">
+                  <li><span>Name:</span> Manish sharma</li>
+                  <li><span>Email:</span> msharma.dev04@gmail.com</li>
+                  <li><span>Phone:</span> +91 737-816-3269</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="about-list">
+                  <li><span>Location:</span> Ajmer Raj IN</li>
+                  <li><span>Availability:</span> Freelance & Full-time</li>
+                  <li><span>Languages:</span> English, Spanish and Hindi</li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-buttons">
+                <a href="image/manish resume.pdf" target="_blank" download class="btn">Download CV</a>
+
+              <div class="social-icons">
+                <a href="https://github.com/Manishshrmam69" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/manish-sharma" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  
+                  <a href="https://www.instagram.com/_manishsharma070" target="_blank" rel="noopener noreferrer" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">What I'm good at</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>HTML/CSS</h4>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>JavaScript</h4>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>React</h4>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Node.js</h4>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>AI</h4>
+                <span>50%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>python </h4>
+                <span>65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>MongoDB/Sql</h4>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Ux/UI/Degine</h4>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">A glimpse of what I’ve built</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3 class="timeline-title">Real-Time Chat App</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, Socket.io, MongoDB</h4>
+            <p class="timeline-description">Built a scalable real-time chat application with group and private messaging. Integrated user authentication and message history.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3 class="timeline-title">Online Voting System</h3>
+            <h4 class="timeline-company">Tech Stack: Java, Supabase, Bootstrap</h4>
+            <p class="timeline-description">Developed a secure online voting platform with user login, candidate dashboard, and vote tracking. Emphasized accessibility and responsiveness.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-content">
+            <span class="timeline-date">2022</span>
+            <h3 class="timeline-title">Developer Portfolio Website</h3>
+            <h4 class="timeline-company">Tech Stack: HTML, CSS, JavaScript</h4>
+            <p class="timeline-description">Designed a modern and mobile-responsive portfolio to showcase my skills, experience, and projects. Integrated contact form and resume download.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3 class="timeline-title">Weather Management App</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, OpenWeather API</h4>
+            <p class="timeline-description">Created a weather dashboard that fetches live weather data by city name. Included features like search history, icon indicators, and real-time updates.</p>
+          </div>
+        </div>
+         <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">geminiAi chatboot</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, OpenAi API</h4>
+            <p class="timeline-description">A simple and responsive Node.js-based chat interface that connects to Google's Gemini API (gemini-1.5-flash) to provide real-time AI-powered question-answering capabilities.
+
+🚀 Features Chat with Google Gemini API (1.5 Flash model)</p>
+          </div>
+        </div>
+         <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">E-Commerce -Clone</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, js mongoDb html ,css, expressjs</h4>
+            <p class="timeline-description">Flipkart Clone - Full Stack E-commerce Application
+A complete e-commerce application built with Node.js, Express, MongoDB, and vanilla JavaScript. Features user authentication, product management, shopping cart, and profile management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Portfolio Section -->
+  <section id="portfolio" class="section section-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">My Portfolio</h2>
+        <p class="section-subtitle">Check out my recent work</p>
+      </div>
+      <div class="portfolio-filters text-center" data-aos="fade-up" data-aos-delay="200">
+        <button class="portfolio-filter active" data-filter="*">All</button>
+        <button class="portfolio-filter" data-filter=".web">Web Design</button>
+        <button class="portfolio-filter" data-filter=".app">App Development</button>
+        <button class="portfolio-filter" data-filter=".ui">UI/UX Design</button>
+      </div>
+      <div class="row portfolio-grid">
+        <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 1" class="img-fluid">
+            </div>
+            <div class="portfolio-info">
+              <h4>E-commerce Website</h4>
+              <p>Web Design</p>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <a href="#portfolioModal1" data-bs-toggle="modal" class="portfolio-preview"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="zoom-in" data-aos-delay="200">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 2" class="img-fluid">
+            </div>
+            <div class="portfolio-info">
+              <h4>Mobile Banking App</h4>
+              <p>App Development</p>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <a href="#portfolioModal2" data-bs-toggle="modal" class="portfolio-preview"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item ui" data-aos="zoom-in" data-aos-delay="300">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 3" class="img-fluid">
+            </div>
+            <div class="portfolio-info">
+              <h4>Travel Platform Design</h4>
+              <p>UI/UX Design</p>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <a href="#portfolioModal3" data-bs-toggle="modal" class="portfolio-preview"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="zoom-in" data-aos-delay="400">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 4" class="img-fluid">
+            </div>
+            <div class="portfolio-info">
+              <h4>Corporate Website</h4>
+              <p>Web Design</p>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <a href="#portfolioModal4" data-bs-toggle="modal" class="portfolio-preview"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="zoom-in" data-aos-delay="500">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 5" class="img-fluid">
+            </div>
+            <div class="portfolio-info">
+              <h4>Fitness Tracker App</h4>
+              <p>App Development</p>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <a href="#portfolioModal5" data-bs-toggle="modal" class="portfolio-preview"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item ui" data-aos="zoom-in" data-aos-delay="600">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 6" class="img-fluid">
+            </div>
+            <div class="portfolio-info">
+              <h4>Dashboard Interface</h4>
+              <p>UI/UX Design</p>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                <a href="#portfolioModal6" data-bs-toggle="modal" class="portfolio-preview"><i class="fas fa-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out to me anytime. I'm available for freelance work, full-time positions, or just to chat about interesting projects.</p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Ajmer Rajasthan  India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>msharma.dev04@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>+91 737-816-3269</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <h4>Follow Me</h4>
+              <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="footer-logo">Manish sharma</h3>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="copyright">&copy; 2025 Manish sharma. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Modals -->
+  <!-- Portfolio Modal 1 -->
+  <div class="modal fade portfolio-modal" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModal1Label">E-commerce Website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 1" class="img-fluid modal-image">
+          <div class="modal-project-info">
+            <h3>Project Information</h3>
+            <ul>
+              <li><strong>Category:</strong> Web Design</li>
+              <li><strong>Client:</strong> Fashion Brand</li>
+              <li><strong>Date:</strong> January 2023</li>
+              <li><strong>Technologies:</strong> HTML, CSS, JavaScript, React, Node.js</li>
+            </ul>
+            <p>A fully responsive e-commerce website for a fashion brand featuring product listings, search functionality, user accounts, and secure checkout. The design emphasizes product photography and a clean, minimalist aesthetic to enhance the shopping experience.</p>
+            <p>Key features include a dynamic product filtering system, wishlist functionality, and integration with popular payment gateways. The site achieved a 30% increase in conversion rate compared to the client's previous website.</p>
+            <a href="#" class="btn btn-primary">View Live Site</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
