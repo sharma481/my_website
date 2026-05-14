@@ -1,7 +1,3 @@
-*
-* Main JavaScript
-* Author: John Doe
-*/
 
 // DOM Elements
 const themeToggleBtn = document.getElementById('theme-toggle-btn');
