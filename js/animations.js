@@ -1,6 +1,6 @@
 /*
 * Animations JavaScript
-* Author: John Doe
+* Author: John Doe & Manish Sharma
 */
 
 // DOM Elements
@@ -57,7 +57,6 @@ portfolioCards.forEach(card => {
 
 // Scroll-triggered animations for elements without AOS
 document.addEventListener('DOMContentLoaded', () => {
-  // Fallback for browsers that don't support AOS
   if (!window.AOS) {
     const animatedElements = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .zoom-in');
     
@@ -66,18 +65,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const elementTop = element.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
         
-        if (elementTop < windowHeight * 0.8) {
+        if (elementTop < windowHeight * 0.85) {
           element.classList.add('visible');
         }
       });
     }
     
     window.addEventListener('scroll', checkVisibility);
-    checkVisibility(); // Check on page load
+    checkVisibility();
   }
 });
 
-// Additional animation for skill bars to ensure they're properly animated
+// Skill bars intersection observer animation trigger
 document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -88,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(skillBar);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.3 });
   
   const skillBars = document.querySelectorAll('.skill-progress');
   skillBars.forEach(bar => {
@@ -99,8 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Parallax effect for the hero section
 window.addEventListener('scroll', () => {
   const scrollPosition = window.pageYOffset;
-  if (document.querySelector('.hero')) {
-    document.querySelector('.hero').style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+  const heroEl = document.querySelector('.hero');
+  if (heroEl) {
+    heroEl.style.backgroundPositionY = `${scrollPosition * 0.4}px`;
   }
 });
 
@@ -124,39 +124,41 @@ document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('.about-image img, .portfolio-image img');
   
   images.forEach(image => {
-    // Create wrapper
-    const wrapper = document.createElement('div');
-    wrapper.classList.add('image-reveal-wrapper');
-    
-    // Create reveal overlay
-    const overlay = document.createElement('div');
-    overlay.classList.add('image-reveal-overlay');
-    
-    // Set up the structure
-    image.parentNode.insertBefore(wrapper, image);
-    wrapper.appendChild(image);
-    wrapper.appendChild(overlay);
-    
-    // Animate on intersection
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          overlay.classList.add('reveal');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    
-    observer.observe(wrapper);
+    const parent = image.parentNode;
+    if (!parent.classList.contains('image-reveal-wrapper')) {
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('image-reveal-wrapper');
+      
+      const overlay = document.createElement('div');
+      overlay.classList.add('image-reveal-overlay');
+      
+      parent.insertBefore(wrapper, image);
+      wrapper.appendChild(image);
+      wrapper.appendChild(overlay);
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            overlay.classList.add('reveal');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      
+      observer.observe(wrapper);
+    }
   });
 });
 
-// Add CSS for image reveal animation
+// Add CSS for dynamic image reveal animation
 const style = document.createElement('style');
 style.textContent = `
   .image-reveal-wrapper {
     position: relative;
     overflow: hidden;
+    display: block;
+    width: 100%;
+    border-radius: var(--border-radius-lg);
   }
   
   .image-reveal-overlay {
@@ -168,7 +170,7 @@ style.textContent = `
     background-color: var(--primary);
     transform: translateX(0);
     transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
-    z-index: 1;
+    z-index: 2;
   }
   
   .image-reveal-overlay.reveal {
@@ -225,8 +227,8 @@ class TextScramble {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || '';
       const to = newText[i] || '';
-      const start = Math.floor(Math.random() * 40);
-      const end = start + Math.floor(Math.random() * 40);
+      const start = Math.floor(Math.random() * 25);
+      const end = start + Math.floor(Math.random() * 25);
       this.queue.push({ from, to, start, end });
     }
     
