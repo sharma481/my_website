@@ -55,9 +55,9 @@
       <div class="row h-100 align-items-center">
         <div class="col-lg-7">
           <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-            <h1 class="hero-title">Hello, I'm <span class="highlight">Manish Sharma</span>.</h1>
+            <h1 class="hero-title">Hello, I'm <span>Manish Sharma</span>.</h1>
             <h2 class="hero-subtitle">
-              <span class="typed" data-typed-items="Software Developer, Web Developer, AI Engineer, Full Stack Developer, Tech Innovator"></span>
+              <span class="typed" data-typed-items="Software Developer, Web Developer, AI Engineer, Full Stack Developer, Tech Innovator">Software Developer</span>
             </h2>
             <p class="hero-description">
               As a Junior Software Developer, I specialize in crafting modern web platforms, building AI-powered tools, and delivering high-impact full-stack digital solutions with clean code.
@@ -70,7 +70,7 @@
         </div>
         <div class="col-lg-5 d-none d-lg-block">
           <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
-            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Manish Sharma Profile" class="img-fluid">
+            <img src="image/manish.jpeg" alt="Manish Sharma Profile" class="img-fluid">
           </div>
         </div>
       </div>
@@ -773,5 +773,24 @@
   
   <script src="js/main.js"></script>
   <script src="js/animations.js"></script>
+
+  <!-- Typed.js Auto-init Fix (agar main.js me initialize na ho) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const typedElement = document.querySelector('.typed');
+      if (typedElement && typeof Typed !== 'undefined') {
+        const items = typedElement.getAttribute('data-typed-items');
+        if (items) {
+          new Typed('.typed', {
+            strings: items.split(',').map(s => s.trim()),
+            loop: true,
+            typeSpeed: 80,
+            backSpeed: 50,
+            backDelay: 2000
+          });
+        }
+      }
+    });
+  </script>
 </body>
 </html>
