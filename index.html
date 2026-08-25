@@ -1,5 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manish Sharma | Software Developer & Web Developer</title>
+  <meta name="description" content="Personal Portfolio of Manish Sharma - Junior Software Developer, Web Developer, and AI Enthusiast.">
+  
+  <!-- CSS Dependencies -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn" class="btn" aria-label="Toggle dark/light theme">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+    </button>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><i class="fas fa-code me-2"></i>Manish Sharma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <!-- Floating dynamic graphics -->
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+    
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="hero-title">Hello, I'm <span class="highlight">Manish Sharma</span>.</h1>
+            <h2 class="hero-subtitle">
+              <span class="typed" data-typed-items="Software Developer, Web Developer, AI Engineer, Full Stack Developer, Tech Innovator"></span>
+            </h2>
+            <p class="hero-description">
+              As a Junior Software Developer, I specialize in crafting modern web platforms, building AI-powered tools, and delivering high-impact full-stack digital solutions with clean code.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>Get In Touch</a>
+              <a href="#portfolio" class="btn btn-outline"><i class="fas fa-layer-group me-2"></i>View My Work</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Manish Sharma Profile" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-shape">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="about-image">
+            <img src="image/manish.jpeg" alt="About Manish Sharma" class="img-fluid shadow-lg">
+          </div>
+        </div>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+          <div class="about-content">
+            <h3>I'm a passionate Software Developer and Web Specialist</h3>
+            <p>I specialize in creating beautiful, scalable websites and digital experiences that help businesses succeed. My engineering approach combines maintainable, clean code with modern design patterns to deliver seamless performance.</p>
+            <p>I actively work on real-time messaging systems, AI assistants, API integrations, and database architectures. Continuous learning and mastering new technology stacks drive my daily development workflow.</p>
+            
+            <div class="row about-info">
+              <div class="col-md-6">
+                <ul class="about-list">
+                  <li><span>Name:</span> Manish Sharma</li>
+                  <li><span>Email:</span> msharma.dev04@gmail.com</li>
+                  <li><span>Phone:</span> +91 737-816-3269</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="about-list">
+                  <li><span>Location:</span> Ajmer, Raj, India</li>
+                  <li><span>Availability:</span> Freelance & Full-time</li>
+                  <li><span>Languages:</span> English, Hindi</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-buttons">
+              <a href="image/Manish sharma resume.pdf" target="_blank" download class="btn btn-primary"><i class="fas fa-file-download me-2"></i>Download CV</a>
+              <div class="social-icons">
+                <a href="https://github.com/sharma481" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manish-sharma" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/_manishsharma070" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Core technical stack & proficiencies</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>HTML5 / CSS3 / Responsive Design</h4>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>JavaScript (ES6+)</h4>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>React.js</h4>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Node.js & Express</h4>
+                <span>78%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="skills-container">
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>AI APIs & Integration (Gemini / OpenAI)</h4>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>Python</h4>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>MongoDB & SQL Databases</h4>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <h4>UI / UX Design & Figma</h4>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Timeline Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">My software development journey & builds</p>
+      </div>
+      
+      <div class="timeline">
+        
+        <!-- Project 1: AI-Customer-Support -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">AI Customer Support</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, Express, Gemini/OpenAI API, React</h4>
+            <p class="timeline-description">An intelligent AI-driven customer support suite capable of managing user inquiries, resolving tickets autonomously, and providing context-aware real-time automated responses.</p>
+            <div>
+              <span class="tech-badge">AI Assistant</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">Express</span>
+            </div>
+            <div class="timeline-footer-links">
+              <a href="https://github.com/sharma481/AI-Customer-Support" target="_blank" class="text-primary"><i class="fab fa-github me-1"></i>View Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: mps-edu-website-v1 (Private) -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">MPS Edu Website v1 <span class="badge bg-secondary ms-2" style="font-size: 0.7rem;">Private</span></h3>
+            <h4 class="timeline-company">Tech Stack: Full-Stack Web, Node.js, Bootstrap, Database</h4>
+            <p class="timeline-description">Comprehensive educational management portal designed for school governance, featuring student/staff portals, course scheduling, announcement updates, and dynamic record management.</p>
+            <div>
+              <span class="tech-badge">Web Platform</span>
+              <span class="tech-badge">Full-Stack</span>
+              <span class="tech-badge">Bootstrap</span>
+            </div>
+            <div class="timeline-footer-links">
+              <a href="https://github.com/sharma481/mps-edu-website-v1" target="_blank" class="text-secondary"><i class="fab fa-github me-1"></i>Repository (Private)</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: weather-app -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3 class="timeline-title">Weather App</h3>
+            <h4 class="timeline-company">Tech Stack: JavaScript, Node.js, OpenWeather API, CSS</h4>
+            <p class="timeline-description">Interactive real-time weather analytics application fetching temperature, humidity, wind conditions, and multi-day forecasts with dynamic weather condition visuals.</p>
+            <div>
+              <span class="tech-badge">Weather API</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">CSS3</span>
+            </div>
+            <div class="timeline-footer-links">
+              <a href="https://github.com/sharma481/weather-app" target="_blank" class="text-primary"><i class="fab fa-github me-1"></i>View Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Chatbot -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">AI Chatbot</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, Gemini 1.5 Flash API, Express, WebSockets</h4>
+            <p class="timeline-description">Real-time intelligent conversational chatbot connecting directly to Google's Gemini Flash model to deliver fast, context-aware answers in a clean chat GUI.</p>
+            <div>
+              <span class="tech-badge">Gemini API</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">WebSockets</span>
+            </div>
+            <div class="timeline-footer-links">
+              <a href="https://github.com/sharma481/Chatbot" target="_blank" class="text-primary"><i class="fab fa-github me-1"></i>View Repository</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Real-Time Chat App -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3 class="timeline-title">Real-Time Chat Application</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, Socket.io, MongoDB, Express</h4>
+            <p class="timeline-description">Scalable real-time messaging application supporting group channels, private direct messages, user authentication, and persistent chat history stored in MongoDB.</p>
+            <div>
+              <span class="tech-badge">Socket.io</span>
+              <span class="tech-badge">MongoDB</span>
+              <span class="tech-badge">Real-Time</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: E-Commerce Clone -->
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+          <div class="timeline-content">
+            <span class="timeline-date">2025</span>
+            <h3 class="timeline-title">Flipkart E-Commerce Clone</h3>
+            <h4 class="timeline-company">Tech Stack: Node.js, Express, MongoDB, Vanilla JS, HTML/CSS</h4>
+            <p class="timeline-description">Full-stack e-commerce store with user registration/login, product catalogue management, interactive shopping cart, order summary, and user profile management.</p>
+            <div>
+              <span class="tech-badge">E-Commerce</span>
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section section-light">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">My Portfolio</h2>
+        <p class="section-subtitle">Explore project highlights by category</p>
+      </div>
+
+      <div class="portfolio-filters text-center" data-aos="fade-up" data-aos-delay="200">
+        <button class="portfolio-filter active" data-filter="*">All</button>
+        <button class="portfolio-filter" data-filter=".ai">AI & ML</button>
+        <button class="portfolio-filter" data-filter=".web">Web Apps</button>
+        <button class="portfolio-filter" data-filter=".app">App Dev</button>
+        <button class="portfolio-filter" data-filter=".ui">UI/UX Design</button>
+      </div>
+
+      <div class="row portfolio-grid">
+
+        <!-- Card 1: AI-Customer-Support -->
+        <div class="col-lg-4 col-md-6 portfolio-item ai" data-aos="zoom-in" data-aos-delay="100">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Customer Support">
+            </div>
+            <div class="portfolio-card-body">
+              <div>
+                <h4>AI Customer Support</h4>
+                <p>AI-Powered Automated Support Suite</p>
+                <div>
+                  <span class="tech-badge">Gemini API</span>
+                  <span class="tech-badge">Node.js</span>
+                </div>
+              </div>
+              <div class="portfolio-card-actions">
+                <a href="https://github.com/sharma481/AI-Customer-Support" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i>GitHub</a>
+                <div class="portfolio-links">
+                  <a href="#portfolioModal1" data-bs-toggle="modal" class="portfolio-preview" title="Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: mps-edu-website-v1 -->
+        <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="zoom-in" data-aos-delay="200">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=800" alt="MPS Edu Website v1">
+            </div>
+            <div class="portfolio-card-body">
+              <div>
+                <h4>MPS Edu Website v1</h4>
+                <p>Educational Platform Portal</p>
+                <div>
+                  <span class="tech-badge">Bootstrap</span>
+                  <span class="tech-badge">Full Stack</span>
+                </div>
+              </div>
+              <div class="portfolio-card-actions">
+                <a href="https://github.com/sharma481/mps-edu-website-v1" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="fab fa-github me-1"></i>Private</a>
+                <div class="portfolio-links">
+                  <a href="#portfolioModal2" data-bs-toggle="modal" class="portfolio-preview" title="Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: weather-app -->
+        <div class="col-lg-4 col-md-6 portfolio-item app" data-aos="zoom-in" data-aos-delay="300">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Weather Forecast App">
+            </div>
+            <div class="portfolio-card-body">
+              <div>
+                <h4>Weather App</h4>
+                <p>Live Weather Forecast Dashboard</p>
+                <div>
+                  <span class="tech-badge">OpenWeather API</span>
+                  <span class="tech-badge">JS</span>
+                </div>
+              </div>
+              <div class="portfolio-card-actions">
+                <a href="https://github.com/sharma481/weather-app" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i>GitHub</a>
+                <div class="portfolio-links">
+                  <a href="#portfolioModal3" data-bs-toggle="modal" class="portfolio-preview" title="Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Chatbot -->
+        <div class="col-lg-4 col-md-6 portfolio-item ai" data-aos="zoom-in" data-aos-delay="400">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/5952647/pexels-photo-5952647.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Chatbot">
+            </div>
+            <div class="portfolio-card-body">
+              <div>
+                <h4>AI Chatbot</h4>
+                <p>Gemini-powered Conversational Bot</p>
+                <div>
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Gemini Flash</span>
+                </div>
+              </div>
+              <div class="portfolio-card-actions">
+                <a href="https://github.com/sharma481/Chatbot" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i>GitHub</a>
+                <div class="portfolio-links">
+                  <a href="#portfolioModal4" data-bs-toggle="modal" class="portfolio-preview" title="Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Real-Time Chat App -->
+        <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="zoom-in" data-aos-delay="500">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Real-Time Chat App">
+            </div>
+            <div class="portfolio-card-body">
+              <div>
+                <h4>Real-Time Chat App</h4>
+                <p>Socket.io Messaging Platform</p>
+                <div>
+                  <span class="tech-badge">Socket.io</span>
+                  <span class="tech-badge">MongoDB</span>
+                </div>
+              </div>
+              <div class="portfolio-card-actions">
+                <a href="https://github.com/sharma481" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i>GitHub</a>
+                <div class="portfolio-links">
+                  <a href="#portfolioModal5" data-bs-toggle="modal" class="portfolio-preview" title="Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Flipkart Clone -->
+        <div class="col-lg-4 col-md-6 portfolio-item web" data-aos="zoom-in" data-aos-delay="600">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800" alt="Flipkart E-Commerce Clone">
+            </div>
+            <div class="portfolio-card-body">
+              <div>
+                <h4>Flipkart E-Commerce Clone</h4>
+                <p>Full-Stack Online Shopping Store</p>
+                <div>
+                  <span class="tech-badge">Express</span>
+                  <span class="tech-badge">MongoDB</span>
+                </div>
+              </div>
+              <div class="portfolio-card-actions">
+                <a href="https://github.com/sharma481" target="_blank" class="btn btn-sm btn-outline-primary"><i class="fab fa-github me-1"></i>GitHub</a>
+                <div class="portfolio-links">
+                  <a href="#portfolioModal6" data-bs-toggle="modal" class="portfolio-preview" title="Details"><i class="fas fa-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header text-center" data-aos="fade-up">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together on your next project</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out to me anytime. I'm open for software development projects, freelance opportunities, or tech discussions.</p>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Ajmer, Rajasthan, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <p>msharma.dev04@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>+91 737-816-3269</p>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <h4>Follow Me</h4>
+              <div class="social-icons">
+                <a href="https://github.com/sharma481" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/manish-sharma" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/_manishsharma070" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane me-2"></i>Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h3 class="footer-logo">Manish Sharma</h3>
+          <div class="footer-social">
+            <a href="https://github.com/sharma481" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/manish-sharma" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/_manishsharma070" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="copyright">&copy; 2026 Manish Sharma. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <!-- Portfolio Modal 1: AI-Customer-Support -->
+  <div class="modal fade portfolio-modal" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">AI Customer Support</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Customer Support" class="img-fluid modal-image">
+          <div class="modal-project-info">
+            <h3>Project Overview</h3>
+            <ul>
+              <li><strong>Category:</strong> AI & Machine Learning</li>
+              <li><strong>Repository:</strong> <a href="https://github.com/sharma481/AI-Customer-Support" target="_blank">github.com/sharma481/AI-Customer-Support</a></li>
+              <li><strong>Technologies:</strong> Node.js, Express, OpenAI / Gemini API, React</li>
+            </ul>
+            <p>AI Customer Support is an end-to-end intelligent customer assistant tool. It automatically interprets customer tickets, suggests high-accuracy solutions, and resolves recurring support queries without requiring manual agent intervention.</p>
+            <a href="https://github.com/sharma481/AI-Customer-Support" target="_blank" class="btn btn-primary"><i class="fab fa-github me-2"></i>Open on GitHub</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Portfolio Modal 2: mps-edu-website-v1 -->
+  <div class="modal fade portfolio-modal" id="portfolioModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">MPS Edu Website v1 (Private)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.pexels.com/photos/256455/pexels-photo-256455.jpeg?auto=compress&cs=tinysrgb&w=800" alt="MPS Edu Website" class="img-fluid modal-image">
+          <div class="modal-project-info">
+            <h3>Project Overview</h3>
+            <ul>
+              <li><strong>Category:</strong> Web Platform</li>
+              <li><strong>Repository:</strong> <a href="https://github.com/sharma481/mps-edu-website-v1" target="_blank">github.com/sharma481/mps-edu-website-v1</a> (Private)</li>
+              <li><strong>Technologies:</strong> Full-Stack JavaScript, Node.js, Bootstrap 5, Database</li>
+            </ul>
+            <p>An institutional management portal featuring student and administration dashboards, grade tracking, announcements, and parent-teacher communication tools built specifically for educational workflows.</p>
+            <a href="https://github.com/sharma481/mps-edu-website-v1" target="_blank" class="btn btn-secondary"><i class="fab fa-github me-2"></i>GitHub (Private Repo)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 3: weather-app -->
+  <div class="modal fade portfolio-modal" id="portfolioModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Weather App</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Weather Forecast App" class="img-fluid modal-image">
+          <div class="modal-project-info">
+            <h3>Project Overview</h3>
+            <ul>
+              <li><strong>Category:</strong> Web Application</li>
+              <li><strong>Repository:</strong> <a href="https://github.com/sharma481/weather-app" target="_blank">github.com/sharma481/weather-app</a></li>
+              <li><strong>Technologies:</strong> JavaScript, OpenWeather API, Node.js, CSS3</li>
+            </ul>
+            <p>A sleek, responsive weather forecasting app providing live weather data, city search with auto-completion, humidity, wind speeds, and visual indicators depending on atmospheric conditions.</p>
+            <a href="https://github.com/sharma481/weather-app" target="_blank" class="btn btn-primary"><i class="fab fa-github me-2"></i>Open on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 4: Chatbot -->
+  <div class="modal fade portfolio-modal" id="portfolioModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">AI Chatbot</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.pexels.com/photos/5952647/pexels-photo-5952647.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Chatbot" class="img-fluid modal-image">
+          <div class="modal-project-info">
+            <h3>Project Overview</h3>
+            <ul>
+              <li><strong>Category:</strong> AI & Chat Interface</li>
+              <li><strong>Repository:</strong> <a href="https://github.com/sharma481/Chatbot" target="_blank">github.com/sharma481/Chatbot</a></li>
+              <li><strong>Technologies:</strong> Node.js, Google Gemini 1.5 Flash API, Express, WebSockets</li>
+            </ul>
+            <p>A fast conversational web chatbot connecting to Google Gemini API (gemini-1.5-flash) to provide real-time question answering, code snippet explanation, and interactive text processing.</p>
+            <a href="https://github.com/sharma481/Chatbot" target="_blank" class="btn btn-primary"><i class="fab fa-github me-2"></i>Open on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5: Real-Time Chat App -->
+  <div class="modal fade portfolio-modal" id="portfolioModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Real-Time Chat App</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Real-Time Chat App" class="img-fluid modal-image">
+          <div class="modal-project-info">
+            <h3>Project Overview</h3>
+            <ul>
+              <li><strong>Category:</strong> Web Application</li>
+              <li><strong>Technologies:</strong> Node.js, Socket.io, MongoDB, Express</li>
+            </ul>
+            <p>Full-featured real-time chat service enabling instant socket-based messaging, online user status indicators, chat rooms, and persistent database storage.</p>
+            <a href="https://github.com/sharma481" target="_blank" class="btn btn-primary"><i class="fab fa-github me-2"></i>View Profile on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Portfolio Modal 6: Flipkart Clone -->
   <div class="modal fade portfolio-modal" id="portfolioModal6" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -23,8 +761,10 @@
       </div>
     </div>
   </div>
+
   <!-- Back to Top Button -->
   <a href="#" class="back-to-top" aria-label="Scroll back to top"><i class="fas fa-arrow-up"></i></a>
+
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
