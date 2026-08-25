@@ -4,7 +4,7 @@ A modern responsive personal portfolio website built using HTML, CSS, JavaScript
 
 ## 🌐 Live Preview
 
-Add your live website link here :>>https://sharma481.github.io/my_website/
+Add your live website link here :>>https://myportfoliy1.netlify.app/
 
 ---
 
