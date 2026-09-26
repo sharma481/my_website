@@ -42,6 +42,17 @@ if (document.querySelector('.typed') && typeof Typed !== 'undefined') {
 function setTheme(themeName) {
   localStorage.setItem('theme', themeName);
   document.documentElement.setAttribute('data-theme', themeName);
+  
+  const themeToggleBtn = document.getElementById('theme-toggle-btn');
+  if (themeToggleBtn) {
+    const isDark = themeName === 'dark';
+    themeToggleBtn.setAttribute('aria-label', isDark ? 'Switch to Light Theme' : 'Switch to Dark Theme');
+    themeToggleBtn.setAttribute('title', isDark ? 'Switch to Light Theme' : 'Switch to Dark Theme');
+    const labelSpan = themeToggleBtn.querySelector('.theme-label-text');
+    if (labelSpan) {
+      labelSpan.textContent = isDark ? 'Dark Mode' : 'Light Mode';
+    }
+  }
 }
 
 // Check for saved user preference, if any
